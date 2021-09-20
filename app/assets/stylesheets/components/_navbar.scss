@@ -1,6 +1,13 @@
 .navbar-lewagon {
   justify-content: space-between;
+  align-items: center;
   background: white;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 888;
+  // min-height: 80px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +16,22 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-link {
+  padding-right: 1rem !important;
+}
+
+.logout-link {
+  color: $medium-gray !important;
+}
+
+@media (max-width: 576px) {
+  .navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
 }
