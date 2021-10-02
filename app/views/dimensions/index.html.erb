@@ -1,0 +1,19 @@
+<%= render "dimensions/new_dimension" %>
+
+<div class="center">
+  <div>
+    <%= link_to "New Dimension".html_safe, root_path, class: "btn btn-flat", data: { toggle: "modal", target: "#newDimension"} %>
+  </div>
+
+  <div>
+    <% @dimensions.each do |dimension| %>
+      <div class="card-product">
+        <div class="card-product-infos">
+          <h2><%= dimension.emoji %> <%= dimension.name.capitalize %></h2>
+          <p><%= dimension.description %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>

@@ -19,6 +19,9 @@
           <%= link_to "📈 Stats", "#", class: "nav-link" %>
         </li>
         <li class="nav-item">
+          <%= link_to "🧘 #{current_user.name}", dimensions_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
           <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link logout-link" %>
         </li>
 

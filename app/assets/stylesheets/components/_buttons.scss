@@ -1,5 +1,5 @@
 .btn-flat {
-  color: white;
+  color: white !important;
   padding: 8px 24px;
   margin-bottom: 2rem;
   border-radius: 4px;
@@ -10,7 +10,7 @@
 
   &:hover {
     background: $red-welm;
-    color: white;
+    color: white !important;
     opacity: 1;
   }
 }

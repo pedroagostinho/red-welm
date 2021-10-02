@@ -1,0 +1,15 @@
+<!-- Modal -->
+<div class="modal fade" id="newDimension" tabindex="-1" role="dialog" aria-labelledby="newDimensionTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <%= simple_form_for :dimension, url: add_dimension_path, method: :get do |f| %>
+          <%= f.input :name %>
+          <%= f.input :emoji %>
+          <%= f.input :description %>
+          <%= f.button :submit, "Add Dimension", class: "btn btn-flat" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
